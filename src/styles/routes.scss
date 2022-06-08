@@ -1,0 +1,70 @@
+@import './mixin';
+
+.about {
+  background-color: $about
+}
+
+.celery {
+  background-color: $celery;
+}
+
+.allmytour {
+  background-color: $allmytour;
+}
+
+.shop {
+  background-color: $shop;
+}
+
+.seocaso {
+  background-color: $seocaso
+}
+
+.humblebug {
+  background-color: $humblebug
+}
+
+@include desktop {
+
+  .mainWrap {
+    height: 100vh;
+    padding: 100px 50px 0 400px;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    position: fixed;
+    z-index: -9;
+    transition: background-color 1.5s ease;
+  }
+  
+  .circleTop {
+    width: 500px;
+    height: 500px;
+    top: -300px;
+    left: 10px;
+  }
+  
+  .circleBottom {
+    width: 700px;
+    height: 700px;
+    right: -350px;
+    bottom: -350px;
+  }
+  
+
+}
+
+@include tablet {
+  .mainWrap {
+    padding: 50px;
+  }
+}
+
+@include mobile {
+  .mainWrap {
+    padding: 50px 20px;
+  }
+}
+
+

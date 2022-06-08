@@ -1,0 +1,90 @@
+@import '../mixin';
+
+.aboutWrap {
+  min-height: 100vh;
+  
+  .title {
+    color: $aboutSub
+  }
+
+  ul {
+    margin: 50px 0;
+    max-width: 800px;
+
+    li {
+      display: inline-block;
+      margin-bottom: 20px;
+
+      i {
+        color: $aboutSub
+      }
+
+      span {
+        margin-left: 10px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: $fontColor;
+      }
+    }
+  }
+
+  .introduce {
+    p {
+      margin-bottom: 30px;
+      word-break: keep-all;
+    }
+  }
+
+  .experience {
+    margin-top: 100px;
+
+    .expTitle {
+      font-size: 1.4rem;
+      color: $aboutSub;
+      font-weight: 500;
+    }
+
+    .expName {
+      margin: 20px 0;
+      font-weight: 500;
+
+      span {
+        margin-left: 10px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .aboutWrap {
+
+      li {
+        width: 400px;
+      }
+    
+  }
+}
+
+
+@include tablet {
+  .aboutWrap {
+  
+      li {
+        width: 50%;
+      }
+
+  }
+}
+
+
+
+@include mobile {
+  .aboutWrap {
+
+      li {
+        width: 100%;
+      }
+
+  }
+}
